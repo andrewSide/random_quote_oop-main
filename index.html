@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Генератор цитат (oop)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Рандомні цитати</h1>
+      <div id="quote">
+        <!-- prettier-ignore -->
+        <p id="quote-text" class="quote-text">Натисніть кнопку, щоб отримати випадкову цитату</p>
+        <p id="quote-author" class="quote-author">(Автор)</p>
+        <button id="random-quote-btn" class="btn">
+          Choose random quote <i class="fas fa-random"></i>
+        </button>
+        <button id="random-quote-api-btn" class="api-btn">
+          Get random quote via API <i class="fas fa-globe"></i>
+        </button>
+      </div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
