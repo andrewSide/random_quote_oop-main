@@ -1,7 +1,7 @@
 import { quotes, jokes } from "../data/quotes.js";
 import MathUtils from "../utils/mathUtils.js";
 import Quote from "./quote.js";
-import config from "../config.js";
+import config from "../../config.js";
 
 class RandomQuote {
   static getRandomQuote() {
