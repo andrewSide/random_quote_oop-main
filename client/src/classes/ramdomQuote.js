@@ -1,15 +1,7 @@
 import { quotes, jokes } from "../data/quotes.js";
 import MathUtils from "../utils/mathUtils.js";
 import Quote from "./quote.js";
-// import config from "../../config.js";
-
-let config 
-
-try {
-  config = await import("../../config.prod.js")
-} catch (error) {
-  config = await import("../../config.js")
-}
+import config from "../../src/config.js";
 
 class RandomQuote {
   static getRandomQuote() {
