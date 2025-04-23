@@ -5,7 +5,7 @@ body {
 }
 
 .container {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
   text-align: center;
 }
@@ -24,35 +24,58 @@ body {
   background-color: #0056b3;
 } */
 
-.btn {
-  background: #a4dada;
-  margin: 10px;
-}
+/* Базовий стиль для всіх кнопок */
 .btn {
   text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
   border-radius: 1em;
-  box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   letter-spacing: 2px;
   color: white;
   transition: 0.15s ease-in-out;
   cursor: pointer;
+  margin: 10px;
 }
-.btn:hover {
+
+/* Модифікатори стилів */
+.btn-primary {
+  background: #a4dada;
+  box-shadow: 0 0 40px 40px #f137a6 inset, 0 0 0 0 #f137a6;
+}
+
+.btn-primary:hover {
   box-shadow: 0 0 10px 0 #f137a6 inset, 0 0 10px 4px #f137a6;
   color: #f137a6;
 }
 
+.btn-api {
+  background: #a4dada;
+  box-shadow: 0 0 40px 40px #9823c0 inset, 0 0 0 0 #9823c0;
+}
+
+.btn-api:hover {
+  box-shadow: 0 0 10px 0 #9823c0 inset, 0 0 10px 4px #9823c0;
+  color: #9823c0;
+}
+
+.btn-own-api {
+  background: #a4dada;
+  box-shadow: 0 0 40px 40px #e34360 inset, 0 0 0 0 #e34360;
+}
+
+.btn-own-api:hover {
+  box-shadow: 0 0 10px 0 #e34360 inset, 0 0 10px 4px #e34360;
+  color: #e34360;
+}
+
+/* Danger модифікатори */
 .btn-danger {
   background-color: transparent;
-  padding: 10px 20px;
   font-size: 16px;
   color: #ff0000;
   border: 2px solid #ff0000;
-  cursor: pointer;
   border-radius: 10px;
 }
 
@@ -60,38 +83,27 @@ body {
   background-color: #decccc;
 }
 
-.api-btn {
-  background: #a4dada;
-}
-.api-btn {
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 1em;
-  box-shadow: 0 0 40px 40px #e34360 inset, 0 0 0 0 #e34360;
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  letter-spacing: 2px;
-  color: white;
-  transition: 0.15s ease-in-out;
-  cursor: pointer;
-}
-.api-btn:hover {
-  box-shadow: 0 0 10px 0 #e34360 inset, 0 0 10px 4px #e34360;
-  color: #e34360;
-}
-
-.api-btn-danger {
+.btn-api-danger {
   background-color: transparent;
-  padding: 10px 20px;
   font-size: 16px;
-  color: #ff0000;
-  border: 2px solid #ff0000;
-  cursor: pointer;
+  color: #9823c0;
+  border: 2px solid #9823c0;
   border-radius: 10px;
 }
 
-.api-btn-danger:hover {
+.btn-api-danger:hover {
+  background-color: #decccc;
+}
+
+.btn-own-api-danger {
+  background-color: transparent;
+  font-size: 16px;
+  color: #ff0000;
+  border: 2px solid #ff0000;
+  border-radius: 10px;
+}
+
+.btn-own-api-danger:hover {
   background-color: #decccc;
 }
 
